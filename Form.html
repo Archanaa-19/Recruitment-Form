@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="stylesheet" href="form.css"/>
+  </head>
+  <body>
+    <h1 id="title">ABC corporation</h1>
+    <p id="description">Recruitment  Form</p>
+    <form id="survey-form" class="form">
+      <label for="name" >Full Name<br><input type="text" id="name" class="lab" required placeholder="Full Name"></label><br>
+      <label for="email">Email Id<br><input type="email" id="email" class="lab" required placeholder="Email"></label><br>
+      <label for="number">Age<br><input type="number" id="number" min="19" max="30" class="lab" required placeholder="Age"></label><br>
+      <label for="contact">Contact<br> <input type="tel" id="contact" pattern="[0-9]{10}" class="lab" required placeholder="Contact"></label><br>
+
+      <div class="year">
+        <label for="year"> year of graduation<br></label>
+        <select id="year">
+            <option>2017</option>
+            <option>2018</option>
+            <option>2019</option>
+            <option>2020</option>
+            <option>2021</option>
+            <option>2022</option>
+            <option>2023</option>
+        
+        </select>
+    </div>
+     
+    <div class="gender">
+      <label for="gender">Gender<br></label>
+      <select id="gender">
+        <option>Male</option>
+        <option>Female</option>
+        <option>Not willing to disclose</option>
+      </select>
+    </div>
+
+    <label for="radio-button">Experience in years</label>
+
+    <div class="radio">
+      <label id="radio"><input type="radio" name="radio-button" value="0" >Fresher</label>
+      <label id="radio"><input type="radio" name="radio-button" value="1" >0-5</label>
+      <label id="radio"><input type="radio" name="radio-button" value="1">5-7</label>
+    </div>
+
+    <label id="textarea">Why are you a great match for this role?</label>
+    <textarea></textarea>
+    <div class="res">
+      <label for="resume">Upload Resume: <input id="resume" type="file" name="resume" /></label>
+      <input type="submit" id="submit" value="Submit Application">
+    </div>
+
+    </form>
+  </body>
+</html>
